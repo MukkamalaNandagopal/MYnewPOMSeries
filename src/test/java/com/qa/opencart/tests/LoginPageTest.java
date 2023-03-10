@@ -59,5 +59,5 @@ public class LoginPageTest extends BaseTest{
 		accPage = loginpage.doLogin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 		Assert.assertTrue(accPage.isLogoutLinkExist());
 	}
-
+      //Git Practice ...
 }
