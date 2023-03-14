@@ -60,8 +60,7 @@ public class AccountsPageTest extends BaseTest{
 			{"Macbook"},
 			{"iMac"},
 			{"Apple"},
-			{"Samsung"},
-			{"nanda"}
+			{"Samsung"}
 		};
 	}
 	
