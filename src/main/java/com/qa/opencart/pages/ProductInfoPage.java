@@ -123,7 +123,7 @@ public class ProductInfoPage {
 		//substring will get remove the x in the success message 
 		public String addProductToCart() {
 			eleUtil.doClick(addToCartBtn);
-			String successMessg = eleUtil.WaitForElementVisible(AppConstants.DEFAULT_SHORT_TIME_OUT, cartSuccessMessg).getText();
+			String successMessg = eleUtil.WaitForElementVisible(AppConstants.DEFAULT_MEDIUM_TIME_OUT, cartSuccessMessg).getText();
 		    System.out.println("cart Success Mesg:" +successMessg);
 		    StringBuilder sb = new StringBuilder(successMessg);
 		    String mesg = sb.substring(0, successMessg.length()-1).replace("\n", "");
