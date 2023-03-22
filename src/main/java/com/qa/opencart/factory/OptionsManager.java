@@ -23,6 +23,13 @@ public class OptionsManager {
 		//Below code is for Chrome v 111 websocket issue ....Its a work around
 		co.addArguments("--remote-allow-origins=*");
 		
+		if(Boolean.parseBoolean(prop.getProperty("remote")))
+			co.setBrowserVersion(prop.getProperty("browserversion"));
+		    co.setCapability("browsername", "chrome");
+		    co.setCapability("enableVNC", true);
+		    co.setCapability("name", prop.getProperty("testcasename"));
+		
+		
 		if (Boolean.parseBoolean(prop.getProperty("headless").trim())) {
 			System.out.println("======================Running Chrome in Headless======================");
 			co.addArguments("--headless");
